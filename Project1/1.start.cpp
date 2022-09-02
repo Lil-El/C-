@@ -23,9 +23,10 @@ int start_main() {
 	signed int si_age = 10; // 有符号4字节
 	short int s_age = 10; // 2字节
 	long int l_age = 10; // 8字节
+	unsigned long long ll_age = 10;
 	signed long int sli_age = 10; // 8
 
-	cout << "sizeof age is:" << sizeof(age) << endl;
+	cout << "sizeof ll_age is:" << sizeof(ll_age) << endl;
 
 	obj = name;
 	cout << obj << endl;
