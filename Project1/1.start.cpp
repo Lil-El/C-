@@ -6,7 +6,15 @@ int start_main() {
 	// 数据类型
 	bool isOk = false; // 1字节
 	int age = 25; // 4字节
-	char str[] = "A";
+	char str[] = "ABB";
+	char rec[9] = "hello";
+
+	// 两个都是字符数组，只有第二个是字符串
+	char rec1[9]{ 'h', 'i', 'k' }; // 字符数组
+	char rec2[9]{ 'h', 'i', 'k', '\0'}; // 字符数组-字符串
+
+	int num11[]{ 1997, 11 }; // C++11特性，可以省略=号
+
 	float size = 13.3; // 4字节
 	double peopel = 14.44; // 8字节
 	// void 
@@ -17,7 +25,7 @@ int start_main() {
 		age2 = 100,
 		sex
 	} obj;
-	
+
 	// 修饰符
 	unsigned int us_age = 10; // 无符号4字节
 	signed int si_age = 10; // 有符号4字节
@@ -25,6 +33,8 @@ int start_main() {
 	long int l_age = 10; // 8字节
 	unsigned long long ll_age = 10;
 	signed long int sli_age = 10; // 8
+	float f_age = (float)age; // 强制类型转换
+	float f_age1 = float(age); // 强制类型转换 C11: 为了像函数一样
 
 	cout << "sizeof ll_age is:" << sizeof(ll_age) << endl;
 
