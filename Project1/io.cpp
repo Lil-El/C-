@@ -10,9 +10,9 @@ void io_main() {
 
 	// https://www.cnblogs.com/zwk-coder/articles/10988504.html
 	int age1[4]{ 1, 2, 3 };
+	// 在不给定长度时，不带有\0，输出末尾会有乱码；带有\0不会有乱码
 	char rec1[20]{ 'h', 'e', 'llo' }; // 字符数组 heo
 	char rec2[20]{ 'h', 'i', 'k', '\0' }; // 字符数组-字符串
-	char rec3[40];
 	cout << "age1 is :" << age1 << endl;
 	cout << "rec1 is :" << rec1 << endl;
 	cout << "rec2 is :" << rec2 << endl;

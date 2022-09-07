@@ -1,9 +1,9 @@
 #include <iostream>
-#include "util.h"
+//#include "util.h"
 using namespace std;
 
-extern void io_main();
+extern void strMain();
 
 void main() {
-	io_main();
+	strMain();
 }

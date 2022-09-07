@@ -36,6 +36,9 @@
     <ClCompile Include="io.cpp">
       <Filter>源文件\book</Filter>
     </ClCompile>
+    <ClCompile Include="3.string.cpp">
+      <Filter>源文件\w3c</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
