@@ -41,3 +41,40 @@
 		1. cpp中定义的static的变量，无法在其他文件中extern并使用的；
 		2. h中定义的static变量，不会产生重复定义问题
 		3. 多个模块可以访问变量，但是不能修改，所以最好加上const修饰符
+
+- extern
+	1. fileA中定义一个函数，fileB中通过extern引用此函数; 头文件被多次引用会提示重复定义，所以在.h中定义或声明函数等全局变量时，需要添加：
+		```
+			#ifndef NAME
+			#define NAME
+			...
+			#endif
+		```
+	2. [extern "C"含义](https://blog.csdn.net/jiqiren007/article/details/5933599)：
+		1. C++特有指令，为了支持C/C++混合编程
+		2. C和C++的编译规则不同：
+			C++比C晚，支持更多的特性，例如C++支持函数重载，C却不行
+			定义一个函数`void fn(int a, int b) {};`C编译后是Function(int, int)；但是C++的编译结果是_Z8Functionii(*ii*表示的是参数)。
+			场景：
+				.h声明函数；在一个.c文件中引入.h并定义函数，该函数使用C方式编译；在Cpp文件中通过extern引入此函数，就会提示函数未定义；(.c定义Function，.cpp引用Functionii)
+				如果.cpp引入.h并定义函数，那么两者都是cpp方式编译，就没有问题。
+			**编译阶段没报错，是链接的阶段报错了**
+			被extern "C"修饰的变量和函数，会通过C的编译方式进行编译。
+			extern对应的关键字是static，static表明变量或者函数只能在本模块中使用，因此，被static修饰的变量或者函数不可能被extern C修饰。
+		3. 使用：
+			```
+				#ifndef __INCvxWorksh /*防止该头文件被重复引用*/
+				#define __INCvxWorksh
+
+				#ifdef __cplusplus             // 如果是C++就渲染`extern "C"{`;
+				extern "C"{
+				#endif
+
+				/*…声明或定义变量、函数等…*/ // 如果是C++，这段代码会被extern C包裹，编译器会使用C的方式去编译、链接；否则就正常。
+
+				#ifdef __cplusplus             // 如果是C++就渲染`}`;
+				}
+				#endif
+
+				#endif /*end of __INCvxWorksh*/
+			```

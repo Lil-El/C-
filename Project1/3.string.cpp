@@ -33,6 +33,7 @@ void strMain() {
 	char str1[]{ '你', '好', 'l', 'l', 'o', '\0' }; // 乱码  一个汉字占两个字节，所以用一个字节的char类型无法存储中文
 	char16_t str2[]{ '你', '好', 'l', 'l', 'o', '\0' }; // 乱码
 	const char *cnStr = "中文"; // 正常
+	cout << "str1:" << str1 << endl;
 
 	wchar_t wstr[] = L"中文哈哈哈"; // 字符前添加L表示告诉编译器为字符分配2字节空间。L是表示字符串资源为Unicode的。
 	// TCHAR源码
@@ -48,7 +49,7 @@ void strMain() {
 	 */
 	wcout.clear();
 	setlocale(LC_ALL, "chs");
-	cout << "输入：cout:  " << wstr2 << endl;
+	cout << "cout:  " << wstr2 << endl;
 	wcout << "wcout:  " << wstr2 << endl;
 	wcout << "wcout:  " << wstr3 << endl;
 
@@ -84,11 +85,9 @@ void strMain() {
 	//wstring wstr = "你好C";
 	cout << "str: " << str << endl;
 
-
 	cout << "**************CString***************" << endl;
 	// CString是对string和wstring的封装，常用于MFC：微软基础类库
 	CString cstr("HEllo");
 	cout << "cstr: " << cstr << endl;
-
-
+	
 }

@@ -142,6 +142,7 @@
     <ClCompile Include="1.start.cpp" />
     <ClCompile Include="2.func.cpp" />
     <ClCompile Include="3.string.cpp" />
+    <ClCompile Include="array.cpp" />
     <ClCompile Include="index.cpp" />
     <ClCompile Include="io.cpp" />
     <ClCompile Include="util.cpp" />
