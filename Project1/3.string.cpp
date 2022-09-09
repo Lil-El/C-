@@ -68,22 +68,23 @@ void strMain() {
 			wchar_t 编码是 UTF-16（Windows）或 UTF-32（多数 Unix-like）。
 			这样，char8_t & 在输入/输出能 reinterpret_cast 成 char &，而 char16_t & 或 char32_t & 中的一种（视平台而定）可以 reinterpret_cast 成 wchar_t &。
 			string/u8string/u16string/u32string 同理处置。这样能解决大多数需求。
-		4. 先别激动。更正确的方法当然是用 std::codecvt 等编码转换功能来转换。
+		4. 更正确的方法当然是用 std::codecvt 等编码转换功能来转换。
 		5. string 间的转换和重载好的运算符，标准库虽未提供，但你可以自行添加。
 	*/
 	// UTF-X是UniCode的表现形式
 	// char8_t char16_t char32_t 表示用于 UTF-x 字符表示形式
 	char16_t str_16 {L'马'};
 	wcout << "char16_t: " << (wchar_t)str_16 << endl;
-	// TODO: u16string(u"Hello");
 
 	cout << "**************String***************" << endl;
 	// string是窄字符串ASCII，而很多Windows API函数用的是宽字符Unicode
 	// wstring宽字符串
 	// string ASCII(也可以表示UTF-8);  wstring UTF-16
 	string str = "你好C";
+	string u8str = u8"你好C"; // UTF-8保存
 	//wstring wstr = "你好C";
 	cout << "str: " << str << endl;
+	cout << "u8str: " << u8str << endl;
 
 	cout << "**************CString***************" << endl;
 	// CString是对string和wstring的封装，常用于MFC：微软基础类库

@@ -13,34 +13,31 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\w3c">
+    <Filter Include="源文件\learning">
       <UniqueIdentifier>{b3e31ae6-7d86-4c5f-8033-6df5d7c1e550}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\book">
-      <UniqueIdentifier>{7af84be6-50cb-48a9-9bbf-c2d957460611}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="index.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1.start.cpp">
-      <Filter>源文件\w3c</Filter>
-    </ClCompile>
     <ClCompile Include="2.func.cpp">
-      <Filter>源文件\w3c</Filter>
+      <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="util.cpp">
-      <Filter>源文件\w3c</Filter>
-    </ClCompile>
-    <ClCompile Include="io.cpp">
-      <Filter>源文件\book</Filter>
+      <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="3.string.cpp">
-      <Filter>源文件\w3c</Filter>
+      <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="array.cpp">
-      <Filter>源文件\w3c</Filter>
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="io.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="1.dataType.cpp">
+      <Filter>源文件\learning</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
