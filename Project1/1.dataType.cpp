@@ -12,8 +12,10 @@ void dataType_main() {
 	int num11[]{ 1997, 11 }; // C++11特性，可以省略=号
 	float size = 13.3; // 4字节
 	double peopel = 14.44; // 8字节
-	__int8 i8 = 12;
-	cout << i8 << endl; // TODO: 
+	__int8 i8 = 97;
+	__int32 i32 = 12;
+	cout << i8 << endl;
+	cout << static_cast<int>(i32) << endl; // TODO: 类型转换 https://blog.csdn.net/liranke/article/details/5295133
 
 	// ''单引号是字符，""双引号是字符串
 	char str[] = "ABB";
@@ -24,6 +26,10 @@ void dataType_main() {
 	char rec2[9]{ 'h', 'i', 'k', '\0' }; // 字符数组-字符串
 	wchar_t wc = L'你'; // _T() 同等于 L (string.cpp)  单引号是字符
 	setlocale(LC_ALL, "chs");
+
+	// 常量 TODO const int const *
+	const int age3 = 11;
+	#define MAX_AGE 12
 
 	// 枚举
 	enum OBJ {

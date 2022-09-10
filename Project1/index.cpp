@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void dataType_main();
+extern void start_func();
 
 void main() {
-	dataType_main();
+	start_func();
 }
