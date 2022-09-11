@@ -30,13 +30,19 @@
     <ClCompile Include="3.string.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
-    <ClCompile Include="array.cpp">
+    <ClCompile Include="4.array.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="io.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="1.dataType.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="5.point.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="6.quote.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
   </ItemGroup>

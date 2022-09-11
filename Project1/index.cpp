@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void start_func();
+extern void quote_main();
 
 void main() {
-	start_func();
+	quote_main();
 }
