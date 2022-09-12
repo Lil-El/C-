@@ -147,8 +147,10 @@
     <ClCompile Include="4.array.cpp" />
     <ClCompile Include="5.point.cpp" />
     <ClCompile Include="6.quote.cpp" />
+    <ClCompile Include="7.io.cpp" />
+    <ClCompile Include="9.classObj.cpp" />
     <ClCompile Include="index.cpp" />
-    <ClCompile Include="io.cpp" />
+    <ClCompile Include="8.struct.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>

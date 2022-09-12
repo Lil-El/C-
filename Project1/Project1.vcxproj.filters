@@ -33,7 +33,7 @@
     <ClCompile Include="4.array.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
-    <ClCompile Include="io.cpp">
+    <ClCompile Include="8.struct.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="1.dataType.cpp">
@@ -43,6 +43,12 @@
       <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="6.quote.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="7.io.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="9.classObj.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
   </ItemGroup>
