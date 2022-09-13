@@ -51,6 +51,12 @@
     <ClCompile Include="9.classObj.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="9.1.classExtends.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.rewrite.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

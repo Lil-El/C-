@@ -43,6 +43,8 @@ public:
 		girlFriend = new Student("Mino", 18);
 	}
 
+	// TODO: [移动构造函数](https://blog.csdn.net/weixin_44788542/article/details/126284429)
+
 	// 析构函数不能携带参数、没有返回值
 	~Student(void) {}
 
@@ -83,6 +85,9 @@ string Student::getName() {
 int Student::count = 0;
 
 void clsObj_main() {
+	// 创建实例：
+	// 1. Student boy(...);
+	// 2. Student boy = Student(...);
 	Student boy("MIno1", 24); // https://blog.csdn.net/weixin_46624734/article/details/123520772
 	cout << &boy << endl; // https://blog.csdn.net/wangzai32100/article/details/125346027
 	cout << &boy.name << endl;
@@ -107,6 +112,8 @@ void clsObj_main() {
 
 	cout << "*********************************" << endl;
 	// 指向类的指针
+	// 1. Student *ptr = &boy;
+	// 2. Student *ptr = new Student("A", 0);
 	Student *ptr = nullptr;
 	ptr = &boy;
 	cout << (*ptr).name << endl; // -> 等于 (*x).

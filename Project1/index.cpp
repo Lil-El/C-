@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void clsObj_main();
+extern void rewrite_main();
 
 void main() {
-	clsObj_main();
+	rewrite_main();
 }

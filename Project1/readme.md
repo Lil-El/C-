@@ -1,8 +1,12 @@
 # C++
 
-> w3c   
-> Book
-> [Microsoft](https://docs.microsoft.com/zh-cn/cpp/cpp/char-wchar-t-char16-t-char32-t?view=msvc-170)
+- 相关文章
+	- [解释型、编译型区别](https://blog.csdn.net/weixin_58257948/article/details/118033564)
+
+- 相关资料
+	- w3c   
+	- Book
+	- [Microsoft](https://docs.microsoft.com/zh-cn/cpp/cpp/char-wchar-t-char16-t-char32-t?view=msvc-170)
 
 ## Visual Studio
 
@@ -84,3 +88,14 @@
 			```
 
 ## [STL](https://blog.csdn.net/weixin_53332395/article/details/123948946) 
+
+## 相关文档
+
+- [new、delete实现原理](https://www.php.cn/blog/detail/31237.html)
+
+## TODO:
+
+- 匿名函数
+- 移动构造函数
+- const指针相关
+- using4种用法
