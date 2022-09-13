@@ -3,6 +3,7 @@
 using namespace std;
 
 // 传递数组给函数
+// 形参数组arr退化为指针，所以arr无法通过sizeof计算获取到arr长度
 int getLastItem(int arr[], int size) {
 	int idx = size - 1;
 	return arr[idx];
