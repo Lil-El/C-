@@ -37,6 +37,7 @@ public:
 	// 不写拷贝构造函数，会自动生成一个缺省的-浅拷贝
 	// 浅拷贝：普通类型的可以正常，但是对于class中的指针来说，新旧对象会引用同一个地址。所以需要重新定义拷贝构造函数，为指针分配内存
 	// 一个函数的参数形参为Student xxx时，也会调用拷贝构造函数（函数调用时，形参会拷贝实参），所以需要使用引用
+	// 函数返回值是Student时，也会调用拷贝函数
 	Student(const Student &student) {
 		name = student.name;
 		age = student.age;
@@ -49,9 +50,9 @@ public:
 	~Student(void) {}
 
 	// 友元函数可以访问protected，private变量，但是不属于成员函数
-	// 友元函数访问
+	// 友元函数访问，友元函数不能被const修饰
 	// 参数是Student类型时，会调用拷贝构造函数，导致形参boy和实参boy不是同一个对象，所以传入Student *指针 或者 Student &引用
-	// 为了防止指针或引用的指向改变，可以添加const进行修饰
+	// 为了防止指针或引用的指向改变，参数可以添加const进行修饰
 	/*friend string getGrilFriendName(Student *boy) {
 		return (*boy).girlFriend->name;
 	}*/
