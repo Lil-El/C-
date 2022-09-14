@@ -113,6 +113,10 @@ public:
 	void operator++(int) {
 		count++;
 	}
+	/*
+		返回类型必须是指针或者是类的对象。
+		运算符 -> 通常与指针引用运算符 * 结合使用，用于实现"智能指针"的功能。
+	*/
 	// sp->getWidth()  即：(sp.operator->())->getWidth()
 	Shape *operator->() {
 		operator++(1);
