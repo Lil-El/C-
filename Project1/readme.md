@@ -100,6 +100,10 @@
 
 - class和struct
 
+## IO
+
+- TODO: cin/cout/clog/cerr区别-缓冲区
+
 ## [STL](https://blog.csdn.net/weixin_53332395/article/details/123948946) 
 
 ## 相关文档
@@ -111,4 +115,6 @@
 - 匿名函数
 - 移动构造函数
 - const指针相关
+- constexpr
 - using4种用法
+- 函数float fnName() const {}

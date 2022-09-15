@@ -1,18 +1,18 @@
 #include<iostream>
 using namespace std;
 
-class Shape {
+class Shape_9_2 {
 
 protected:
 	float width;
 	float height;
 
 public:
-	Shape() {}
+	Shape_9_2() {}
 
-	Shape(float w, float h) : width(w), height(h) {}
+	Shape_9_2(float w, float h) : width(w), height(h) {}
 
-	Shape(const Shape &s) {
+	Shape_9_2(const Shape_9_2 &s) {
 		cout << "拷贝" << endl;
 		width = s.width;
 		height = s.height;
@@ -34,45 +34,45 @@ public:
 	friend class SmartPoint;
 
 	// 一元运算符 - !等
-	Shape operator-() {
+	Shape_9_2 operator-() {
 		width = -this->width;
 		height = -height;
-		// return 新的实例的话，赋值时生效。例如：return Shape shape(); Shape s = -rect1;
-		return *this; // return Shape()
+		// return 新的实例的话，赋值时生效。例如：return Shape_9_2 shape(); Shape_9_2 s = -rect1;
+		return *this; // return Shape_9_2()
 	}
 	// 二元运算符 + - * /
-	Shape operator+(const Shape &s) {
-		Shape shape;
+	Shape_9_2 operator+(const Shape_9_2 &s) {
+		Shape_9_2 shape;
 		shape.setWidth(this->width + s.width);
 		shape.setHeigth(this->height + s.height);
 		return shape;
 	}
 	// 关系运算符 < > <= ==等
-	bool operator==(const Shape &s) {
+	bool operator==(const Shape_9_2 &s) {
 		if (s.width == this->width && s.height == height) return true;
 		return false;
 	}
 	// 前缀递增运算符++
-	Shape operator++(int) {
+	Shape_9_2 operator++(int) {
 		width = width + 1;
 		height = height + 1;
 		return *this; // 返回新的
 	}
 	// 后缀递增运算符++
-	Shape operator++() {
-		Shape shape(width, height);
+	Shape_9_2 operator++() {
+		Shape_9_2 shape(width, height);
 		width = width + 1;
 		height = height + 1;
 		return shape; // 返回旧的
 	}
 	// 赋值运算符 =
-	void operator=(const Shape &s) {
+	void operator=(const Shape_9_2 &s) {
 		cout << "赋值运算符" << endl;
 		width = s.width;
 		height = s.height;
 	}
 	// 函数调用运算符 () 重载
-	Shape operator()(int x) {
+	Shape_9_2 operator()(int x) {
 		width = width + x;
 		height = height + x;
 		return *this;
@@ -91,11 +91,11 @@ public:
 		this指针默认是第一个参数，也就是左操作数，但在实际使用中cout需要的是第一个形参对象，才能正常使用
 		所以我们要将operator<<重载成全局函数，为了让类外可以访问成员，就需要友元函数来解决了。
 	*/
-	friend ostream &operator<<(ostream &out, Shape &s) {
+	friend ostream &operator<<(ostream &out, Shape_9_2 &s) {
 		//out << "width: " << s.width << "; height: " << s.height << endl;
 		return out;
 	}
-	friend istream &operator>>(istream &in, Shape &s) {
+	friend istream &operator>>(istream &in, Shape_9_2 &s) {
 		//in >> s.width >> s.height;
 		return in;
 	}
@@ -103,10 +103,10 @@ public:
 
 class SmartPoint {
 private:
-	Shape *shape;
+	Shape_9_2 *shape;
 public:
 	static int count;
-	SmartPoint(Shape *s) {
+	SmartPoint(Shape_9_2 *s) {
 		shape = s;
 	}
 	// sp++ 即：sp.operator++()
@@ -118,7 +118,7 @@ public:
 		运算符 -> 通常与指针引用运算符 * 结合使用，用于实现"智能指针"的功能。
 	*/
 	// sp->getWidth()  即：(sp.operator->())->getWidth()
-	Shape *operator->() {
+	Shape_9_2 *operator->() {
 		operator++(1);
 		return shape;
 	}
@@ -129,7 +129,7 @@ int SmartPoint::count = 0;
 // 重载大部分 C++ 内置的运算符
 // 对于形参、返回值调用的是拷贝构造函数；对于=调用赋值重载
 void rewrite_main() {
-	Shape rect1, rect2, rect3;
+	Shape_9_2 rect1, rect2, rect3;
 	// r1
 	rect1.setWidth(10);
 	rect1.setHeigth(10);
@@ -148,9 +148,9 @@ void rewrite_main() {
 	cout << rect1.getWidth() << endl;
 	cout << rect1.getHeight() << endl;
 
-	Shape s1 = Shape(99, 33);
+	Shape_9_2 s1 = Shape_9_2(99, 33);
 	cout << s1.getWidth() << endl;
-	cout << Shape(14, 15).getHeight() << endl;
+	cout << Shape_9_2(14, 15).getHeight() << endl;
 	// ++
 	s1++;
 	cout << s1.getWidth() << endl;
@@ -164,7 +164,7 @@ void rewrite_main() {
 	cout << s1[0] << " " << s1[1] << endl;
 	// ->
 	cout << "**********************" << endl;
-	Shape *sptr = &s1;
+	Shape_9_2 *sptr = &s1;
 	cout << sptr->getWidth() << endl;
 
 	cin >> s1;

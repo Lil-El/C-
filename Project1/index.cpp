@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void rewrite_main();
+extern void h_io_main();
 
 void main() {
-	rewrite_main();
+	h_io_main();
 }

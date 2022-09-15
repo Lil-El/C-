@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Shape {
+class Shape_9_1 {
 private:
 	char type[10];
 protected:
@@ -9,7 +9,7 @@ protected:
 	float height;
 
 public:
-	Shape() {}
+	Shape_9_1() {}
 
 	void setWidth(float w) {
 		width = w;
@@ -31,15 +31,15 @@ public:
 	private：父类的public、protected成员是子类的private成员
 */
 // 继承不会继承父类的构造函数、拷贝构造函数、友元函数、重载运算符
-// 多继承：clss Rectangle: public Shape, public classB, protected classC {}
-class Rectangle : public Shape {
+// 多继承：clss Rectangle_9_1: public Shape_9_1, public classB, protected classC {}
+class Rectangle_9_1 : public Shape_9_1 {
 public:
 	float getArea() {
 		return width * height;
 	}
 };
 
-class : public Shape {
+class : public Shape_9_1 {
 public:
 	float getArea() {
 		return width * height;
@@ -47,7 +47,7 @@ public:
 } circle;
 
 void extend_main() {
-	Rectangle rect;
+	Rectangle_9_1 rect;
 	rect.setWidth(10);
 	rect.setHeigth(10);
 	cout << "Area is: " << rect.getArea() << endl;

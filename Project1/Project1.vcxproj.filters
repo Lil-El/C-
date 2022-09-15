@@ -16,6 +16,9 @@
     <Filter Include="源文件\learning">
       <UniqueIdentifier>{b3e31ae6-7d86-4c5f-8033-6df5d7c1e550}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\high-grade">
+      <UniqueIdentifier>{cd8bcf4d-91af-4530-a72f-408d68c51d6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="index.cpp">
@@ -57,6 +60,12 @@
     <ClCompile Include="9.2.rewrite.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="9.3.classVirtual.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
+    <ClCompile Include="1.io.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
@@ -67,5 +76,10 @@
     <None Include="readme.md">
       <Filter>资源文件</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="file.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

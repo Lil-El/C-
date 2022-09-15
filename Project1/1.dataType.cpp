@@ -30,6 +30,7 @@ void dataType_main() {
 	// ³£Á¿ TODO const int const *
 	const int age3 = 11;
 	#define MAX_AGE 12
+	// TODO: constexpr
 
 	// Ã¶¾Ù
 	enum OBJ {
