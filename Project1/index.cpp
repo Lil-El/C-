@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void h_io_main();
+extern void new_main();
 
 void main() {
-	h_io_main();
+	new_main();
 }
