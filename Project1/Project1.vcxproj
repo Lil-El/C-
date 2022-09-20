@@ -148,7 +148,9 @@
     <ClCompile Include="3.new.cpp" />
     <ClCompile Include="3.string.cpp" />
     <ClCompile Include="4.array.cpp" />
+    <ClCompile Include="4.namespace.cpp" />
     <ClCompile Include="5.point.cpp" />
+    <ClCompile Include="5.template.cpp" />
     <ClCompile Include="6.quote.cpp" />
     <ClCompile Include="7.io.cpp" />
     <ClCompile Include="9.1.classExtends.cpp" />

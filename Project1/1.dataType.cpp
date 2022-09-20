@@ -61,6 +61,10 @@ void dataType_main() {
 	myEnum my_enum = sex;
 	cout << "my_enum:" << my_enum << endl;
 
+	using mInt = int;
+	mInt mIAge = 31;
+	cout << "mIAge: " << mIAge << endl;
+
 	// 常量 static存储类
 	age = 22;
 	const static int myAge = 18; // static变量，多个函数直接共享一个值；用于class成员时，所以class对象都共享一个对象

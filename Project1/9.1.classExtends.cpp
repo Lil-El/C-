@@ -14,6 +14,9 @@ public:
 	void setWidth(float w) {
 		width = w;
 	};
+	void setWidth() {
+		width = 100;
+	};
 	void setHeigth(float h) {
 		height = h;
 	};
@@ -45,6 +48,17 @@ public:
 		return width * height;
 	}
 } circle;
+
+// 继承方式private，父级的public、protected变为private
+// 使用using可以重新声明访问权限
+// 使用using可以直接重载父级的对应的全部版本的函数
+class myShape : private Shape_9_1 {
+public:
+	using Shape_9_1::width;
+	using Shape_9_1::setWidth;
+protected:
+	using Shape_9_1::height;
+};
 
 void extend_main() {
 	Rectangle_9_1 rect;

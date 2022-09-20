@@ -72,6 +72,12 @@
     <ClCompile Include="3.new.cpp">
       <Filter>源文件\high-grade</Filter>
     </ClCompile>
+    <ClCompile Include="4.namespace.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
+    <ClCompile Include="5.template.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

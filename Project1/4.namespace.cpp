@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+namespace h_3_namespace {
+	void log(const char *str) {
+		cout << "str: " << str << endl;
+	}
+	namespace inner_namespace{
+		void log2(const char *str) {
+			cout << "str2: " << str << endl;
+		}
+	}
+}
+
+void name_main() {
+	// 1
+	h_3_namespace::log("×Ö·û´®");
+	using namespace h_3_namespace;
+	log("123");
+
+	// 2
+	h_3_namespace::inner_namespace::log2("log");
+	using namespace h_3_namespace::inner_namespace;
+	log2("sds");
+}
