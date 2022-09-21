@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void tmp_main();
+extern void process_main();
 
 void main() {
-	tmp_main();
+	process_main();
 }
