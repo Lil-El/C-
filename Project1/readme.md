@@ -18,7 +18,16 @@
 
 ## using
 
-- TODO: using的4中用法
+1. 类型定义，类似于typedef
+2. 命名空间，using namespace
+3. 父类成员变量修饰 `class: private parent { public: using parent::name};`
+4. 父类重载函数 `class : parent {using parent::getName()}`
+
+## 预编译
+
+- #program warning
+- #program push/pop
+https://blog.csdn.net/Poo_Chai/article/details/89350054
 
 ## 字符串
 

@@ -31,7 +31,7 @@ void process_main() {
 #ifdef PI
 	cout << PI << endl;
 #endif
-#ifdef getPIFunction
+#if defined(getPIFunction)
 	cout << (MAX(1, 2)) << endl;
 #endif
 	cout << __LINE__ << ": " << getParam("Hello") << endl;

@@ -19,6 +19,9 @@
     <Filter Include="源文件\high-grade">
       <UniqueIdentifier>{cd8bcf4d-91af-4530-a72f-408d68c51d6a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\knowledge">
+      <UniqueIdentifier>{902b0e82-b34a-4e3f-9573-0b33381236dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="index.cpp">
@@ -80,6 +83,15 @@
     </ClCompile>
     <ClCompile Include="6.preprocess.cpp">
       <Filter>源文件\high-grade</Filter>
+    </ClCompile>
+    <ClCompile Include="7.signal.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
+    <ClCompile Include="1.byteAlign.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
+    <ClCompile Include="2.byteAlign.cpp">
+      <Filter>源文件\knowledge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

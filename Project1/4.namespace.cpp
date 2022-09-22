@@ -12,7 +12,14 @@ namespace h_3_namespace {
 	}
 }
 
+namespace std {
+	void stdLog() {
+		cout << "std log message!" << endl;
+	}
+}
+
 void name_main() {
+	stdLog();
 	// 1
 	h_3_namespace::log("×Ö·û´®");
 	using namespace h_3_namespace;

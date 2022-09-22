@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void process_main();
+extern void k_b_a_main();
 
 void main() {
-	process_main();
+	k_b_a_main();
 }

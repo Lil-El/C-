@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.byteAlign.cpp" />
     <ClCompile Include="1.dataType.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1.io.cpp" />
+    <ClCompile Include="2.byteAlign.cpp" />
     <ClCompile Include="2.exception.cpp" />
     <ClCompile Include="2.func.cpp" />
     <ClCompile Include="3.new.cpp" />
@@ -154,6 +156,7 @@
     <ClCompile Include="6.preprocess.cpp" />
     <ClCompile Include="6.quote.cpp" />
     <ClCompile Include="7.io.cpp" />
+    <ClCompile Include="7.signal.cpp" />
     <ClCompile Include="9.1.classExtends.cpp" />
     <ClCompile Include="9.2.rewrite.cpp" />
     <ClCompile Include="9.3.classVirtual.cpp" />
