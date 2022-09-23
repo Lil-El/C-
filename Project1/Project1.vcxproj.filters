@@ -93,6 +93,9 @@
     <ClCompile Include="2.byteAlign.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
+    <ClCompile Include="8.thread.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
