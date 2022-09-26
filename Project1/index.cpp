@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void thread_main();
+extern void stl_vector_main();
 
 void main() {
-	thread_main();
+	stl_vector_main();
 }

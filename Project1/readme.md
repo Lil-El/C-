@@ -28,6 +28,8 @@
 
 - #program warning
 - #program push/pop
+- #define: 定义宏
+- #undef: 取消宏定义
 https://blog.csdn.net/Poo_Chai/article/details/89350054
 
 ## 字符串
@@ -114,7 +116,20 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 
 - TODO: cin/cout/clog/cerr区别-缓冲区
 
+- 模板
+
+template
+http://m.biancheng.net/view/320.html
+https://blog.csdn.net/vanturman/article/details/81746063
+https://blog.csdn.net/qq_45801299/article/details/112298619
+
 ## [STL](https://blog.csdn.net/weixin_53332395/article/details/123948946) 
+
+提供一套功能强大的模板类和函数，这些类和函数可以实现算法和数据结构。
+
+- Container：容器
+- Algorithms：算法
+- iterator：迭代器
 
 ## 相关文档
 
@@ -125,6 +140,12 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 - 匿名函数
 - 移动构造函数
 - const指针相关
-- constexpr
+- constexpr：https://blog.csdn.net/qq_37766667/article/details/123915233
 - union
 - 函数float fnName() const {}
+- decltype：自动类型推导
+- noexcept
+- explicit
+- [[noreturn]]
+- &&...：http://t.zoukankan.com/ishen-p-13771991.html
+- <class... x>
