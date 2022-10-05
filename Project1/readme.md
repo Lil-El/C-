@@ -128,4 +128,5 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 - const指针相关
 - constexpr
 - union
+- explicit
 - 函数float fnName() const {}

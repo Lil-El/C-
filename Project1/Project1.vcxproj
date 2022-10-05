@@ -151,6 +151,7 @@
     <ClCompile Include="2.map.cpp" />
     <ClCompile Include="3.new.cpp" />
     <ClCompile Include="3.string.cpp" />
+    <ClCompile Include="3.typeTransform.cpp" />
     <ClCompile Include="4.array.cpp" />
     <ClCompile Include="4.namespace.cpp" />
     <ClCompile Include="5.point.cpp" />

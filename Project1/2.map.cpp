@@ -58,7 +58,7 @@ void stl_map_main() {
 	stl_map_iterator_back(a);
 
 	a["dd"] = 10;
-	stl_map_find(a, static_cast<string>("D")); // 类型转换：(string)"D"
+	stl_map_find(a, static_cast<string>("D")); // 类型转换：(string)"D"，string("D")
 	stl_map_iterator_front(a);
 	a.erase("dd");
 	stl_map_iterator_front(a);
