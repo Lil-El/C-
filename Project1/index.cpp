@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void stl_vector_main();
+extern void stl_map_main();
 
 void main() {
-	stl_vector_main();
+	stl_map_main();
 }

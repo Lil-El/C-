@@ -23,7 +23,7 @@
       <UniqueIdentifier>{902b0e82-b34a-4e3f-9573-0b33381236dc}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\STL">
-      <UniqueIdentifier>{cffbca57-ca73-48f4-a4ca-6ce6942ad700}</UniqueIdentifier>
+      <UniqueIdentifier>{2120dec6-cdcd-4ee0-8ae9-c2638502f47a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +100,9 @@
       <Filter>源文件\high-grade</Filter>
     </ClCompile>
     <ClCompile Include="1.vector.cpp">
+      <Filter>源文件\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="2.map.cpp">
       <Filter>源文件\STL</Filter>
     </ClCompile>
   </ItemGroup>

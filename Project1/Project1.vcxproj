@@ -148,6 +148,7 @@
     <ClCompile Include="2.byteAlign.cpp" />
     <ClCompile Include="2.exception.cpp" />
     <ClCompile Include="2.func.cpp" />
+    <ClCompile Include="2.map.cpp" />
     <ClCompile Include="3.new.cpp" />
     <ClCompile Include="3.string.cpp" />
     <ClCompile Include="4.array.cpp" />
