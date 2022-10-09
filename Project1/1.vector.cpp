@@ -18,6 +18,7 @@ void stl_vector_main() {
 	Mino_STL vector<int> a{ 1, 2, 3 };
 	std::vector<int> _b = { 1, 2, 3 };
 	vector<int> _c = vector<int>(10);
+	vector<int> _d(10); // м╛ио
 
 	_b.clear();
 	cout << boolalpha << _b.empty() << endl;

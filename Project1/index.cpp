@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void stl_map_main();
+extern void know_type_transform();
 
 void main() {
-	stl_map_main();
+	know_type_transform();
 }
