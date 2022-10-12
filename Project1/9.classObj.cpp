@@ -26,6 +26,10 @@ public:
 	static int count; // static修饰变量、函数：所有的class的实例共享一个变量、函数
 	string name = "0"; // sizeof 40字节
 
+	Student(string a) :name(a) {
+		age = 0;
+		count++;
+	}
 	// 初始化列表
 	Student(string a, int b) :name(a), age(b) {
 		name = a;
@@ -60,6 +64,10 @@ public:
 		return boy.girlFriend->name;
 	}
 
+	Student *operator=(const string &n) {
+		name = n;
+	}
+
 	static int getCount() {
 		return count;
 	}
@@ -89,6 +97,9 @@ void clsObj_main() {
 	// 创建实例：
 	// 1. Student boy(...);
 	// 2. Student boy = Student(...);
+	Student a("yyxxd"); // 使用构造函数
+	Student b = (string)"yxd"; // 使用operator重载=
+
 	Student boy("MIno1", 24); // https://blog.csdn.net/weixin_46624734/article/details/123520772
 	cout << &boy << endl; // https://blog.csdn.net/wangzai32100/article/details/125346027
 	cout << &boy.name << endl;
