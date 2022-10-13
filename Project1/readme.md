@@ -147,7 +147,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - decltype：自动类型推导
 - noexcept
 - explicit
-- [[noreturn]]
+- [[noreturn]] [[discard]]
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
 - <class... x>
 - dllimport dllexport
