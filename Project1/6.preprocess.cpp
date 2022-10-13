@@ -38,4 +38,3 @@ void process_main() {
 	cout << concat("P", "I") << ": " << concat(P, I) << endl;
 }
 #endif // !PROCESS
-

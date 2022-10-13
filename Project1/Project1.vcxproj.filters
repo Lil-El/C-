@@ -108,6 +108,9 @@
     <ClCompile Include="3.typeTransform.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
+    <ClCompile Include="4.marco.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
