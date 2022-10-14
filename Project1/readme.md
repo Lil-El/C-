@@ -9,6 +9,13 @@
 	- [C语言中文网](http://c.biancheng.net/view/7165.html)
 	- [Microsoft](https://docs.microsoft.com/zh-cn/cpp/cpp/char-wchar-t-char16-t-char32-t?view=msvc-170)
 
+## GNU C, ANSI C
+
+- GNU C, ANSI C是两个标准，分别通过gcc和vs实现
+- GNU C通过gcc（linux）编译
+- ANSI C通过vs（windows）编译。
+- GNU C从语言层面相对于ANSI C做了一些扩展，所在一段跨平台的程序可以通过gcc编译，也不一定能用vs编译。
+
 ## Visual Studio
 
 - “工具”->“选项”->“文本编辑器”->“C/C++”->“代码样式”->“格式设置”->“间距”->“指针/引用对齐方式”->“右对齐”
@@ -137,7 +144,6 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 ## TODO:
 
-- 类型转换
 - 匿名函数
 - 移动构造函数
 - const指针相关
@@ -147,7 +153,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - decltype：自动类型推导
 - noexcept
 - explicit
-- [[noreturn]] [[discard]]
+- [[noreturn]]
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
 - <class... x>
 - dllimport dllexport

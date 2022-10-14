@@ -111,6 +111,15 @@
     <ClCompile Include="4.marco.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
+    <ClCompile Include="5.attribute.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
+    <ClCompile Include="6.declspec.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
+    <ClCompile Include="7.keywords.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

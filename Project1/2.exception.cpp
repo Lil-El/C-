@@ -11,7 +11,7 @@ using namespace std;
 	throw(...)  表示可能抛出任何异常
 
 
-  在C++11中，使用noexcept代替
+  在C++11中，使用noexcept代替，异常返回false，否则是true
   void fn() noexcept {}
 
   在C++17中，throw()被废弃了

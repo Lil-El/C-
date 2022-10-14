@@ -2,8 +2,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void know_marco_main();
+extern void know_key_main();
 
 void main() {
-	know_marco_main();
+	know_key_main();
 }
