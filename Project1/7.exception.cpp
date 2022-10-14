@@ -12,16 +12,16 @@ using namespace std;
 		使用第三方的库时，你都不知道catch什么错误。
 		如果fn() throw(int, double)，fn中throw其他类型的错误，编译是可以通过的，也没有警告。
 		知道“会抛什么异常”没什么意义，但是知道“是否会抛异常”可以有不同的优化
-	所以直接使用noexcept直接terminal退出程序
+	所以直接使用noexcept直接terminate退出程序
 
 	http://www.wjhsh.net/5iedu-p-11270922.html
 */
-int know_key_fn(bool flag) noexcept {
+int know_key_fn(bool flag) noexcept(false) {
 	if (flag) {
 		return 99;
 	}
 	else {
-		throw 500;
+		throw true; //  "MM"; // 500
 	}
 }
 
@@ -34,9 +34,17 @@ int know_key_fn(bool flag) noexcept {
 	catch (const int& err) {
 		cout << err << endl;
 	}
+	catch (const char* err)
+	{
+		cout << err << endl;
+	}
 	catch (const exception& err)
 	{
 		cout << err.what() << endl;
+	}
+	catch (...) // 捕获全部类型异常
+	{
+		cout << "catch unknown error" << endl;
 	}
 	// return; // 因为是noreturn，所以即使写了return;也会提示错误
 }
