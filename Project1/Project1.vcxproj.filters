@@ -117,7 +117,7 @@
     <ClCompile Include="6.declspec.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
-    <ClCompile Include="7.keywords.cpp">
+    <ClCompile Include="7.exception.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
   </ItemGroup>

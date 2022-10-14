@@ -150,8 +150,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - constexpr：https://blog.csdn.net/qq_37766667/article/details/123915233
 - union
 - 函数float fnName() const {}
-- decltype：自动类型推导
-- noexcept
+- decltype：自动类型推导  auto
 - explicit
 - [[noreturn]]
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
