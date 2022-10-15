@@ -18,6 +18,11 @@ namespace std {
 	}
 }
 
+typedef int my_int;
+namespace std {
+	using ::my_int;
+}
+
 void name_main() {
 	stdLog();
 	// 1
@@ -29,4 +34,6 @@ void name_main() {
 	h_3_namespace::inner_namespace::log2("log");
 	using namespace h_3_namespace::inner_namespace;
 	log2("sds");
+
+	std::my_int a = 1;
 }

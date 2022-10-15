@@ -1,9 +1,10 @@
 #include <iostream>
+#include <cstdarg>
 //#include "util.h"
 using namespace std;
 
-extern void know_key_main();
+extern void know_vapara();
 
-void main() {
-	know_key_main();
+int main() {
+	know_vapara();
 }
