@@ -87,6 +87,7 @@ public:
 
 	string getName();
 };
+
 string Student::getName() {
 	return name;
 }

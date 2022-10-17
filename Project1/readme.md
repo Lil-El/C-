@@ -118,6 +118,7 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 	3. 在对象赋值时，使用=或()赋值。需要先将左值清除，然后赋值。默认的指针成员内存不会被释放。所以重载赋值操作符，进行删除指针。
 
 - class和struct
+- is_base_of, typeid判断继承关系
 
 ## IO
 
@@ -129,6 +130,14 @@ template
 http://m.biancheng.net/view/320.html
 https://blog.csdn.net/vanturman/article/details/81746063
 https://blog.csdn.net/qq_45801299/article/details/112298619
+
+## 其他
+
+- static_assert：静态断言 C++11，在编译时检测，不通过会报错
+- assert：断言，不影响编译，失败也可以通过，在运行时检测；
+- 性能：
+	static_assert: 所包含的代码不会生成目标代码，不会影响程序性能；
+	assert: 会影响程序性能，常用于调试阶段，正式释放软件时通常关闭assert功能
 
 ## [STL](https://blog.csdn.net/weixin_53332395/article/details/123948946) 
 
