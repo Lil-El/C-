@@ -123,6 +123,9 @@
     <ClCompile Include="8.vaparameter.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
+    <ClCompile Include="9.attribute.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

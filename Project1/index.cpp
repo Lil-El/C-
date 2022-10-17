@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void know_vapara();
+extern void know_noreturn_main();
 
 int main() {
-	know_vapara();
+	know_noreturn_main();
 }
