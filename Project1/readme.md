@@ -161,7 +161,8 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - union
 - 函数float fnName() const {}
 - decltype：自动类型推导  auto __cdecl
-- explicit：https://blog.csdn.net/qq_24127015/article/details/104412800
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
 - <class... x>
 - dllimport dllexport
+- 虚继承：https://blog.csdn.net/King_weng/article/details/112180275
+- override 和 overload 和 overwrite https://blog.csdn.net/qq_42542471/article/details/124659190 https://blog.csdn.net/qq_34793133/article/details/80938099

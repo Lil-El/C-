@@ -14,6 +14,9 @@ public:
 	Shape_9_3(float w = 0, float h = 0) : width(w), height(h) {
 		std::cout << "shape constructor call" << std::endl;
 	}
+	virtual ~Shape_9_3() {
+		std::cout << "析构Base" << std::endl;
+	}
 	/*
 		虚函数 是在基类中使用关键字 virtual 声明的函数。在派生类中重新定义基类中定义的虚函数时，会告诉编译器不要静态链接到该函数。
 		在程序中任意点可以根据所调用的对象类型来选择调用的函数，这种操作被称为动态链接，或后期绑定。
@@ -39,6 +42,9 @@ public:
 class Triangle_9_3 : public Shape_9_3 {
 public:
 	Triangle_9_3(float w, float h) : Shape_9_3(w, h) {}
+	~Triangle_9_3() {
+		std::cout << "析构Derived-Triangle" << std::endl;
+	}
 	float getArea() {
 		std::cout << "call triangle" << std::endl;
 		return (width * height) / 2;
@@ -51,6 +57,9 @@ public:
 class Rectangle_9_3 : public Shape_9_3 {
 public:
 	Rectangle_9_3(float w, float h) : Shape_9_3(w, h) {}
+	~Rectangle_9_3() {
+		std::cout << "析构Derived-Rect" << std::endl;
+	}
 	float getArea() {
 		std::cout << "call rect" << std::endl;
 		return width * height;
@@ -83,4 +92,23 @@ void virtual_main() {
 	std::cout << "**********" << std::endl;
 	std::cout << rect.getHalfHeight() << std::endl;
 	std::cout << triangle.getHalfHeight() << std::endl;
+
+	std::cout << "*****delete*****" << std::endl;
+	//delete s93;
 }
+
+/*
+class A   void fn()
+class B:A void fn()
+a指针 = new B;  a->fn()执行的是A的fn；
+为class A的fn添加virtual；上一步的结果是B的fn；
+
+析构函数也是同理。
+class A   ~A(){}
+class B:A   ~B(){}
+b指针 = new B;
+delete b; 先执行B析构，然后是A的析构
+如果是a指针 = new B；
+delete b；就会出现只析构A，而没有析构B
+所以要为A的析构添加virtual。使得先析构B，然后A；
+*/

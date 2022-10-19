@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void high_sleep_main();
+extern void know_explicit_main();
 
 int main() {
-	high_sleep_main();
+	know_explicit_main();
 }
