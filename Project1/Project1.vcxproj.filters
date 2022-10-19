@@ -138,6 +138,9 @@
     <ClCompile Include="9.3.classVirtualExtend.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="10.overwrite.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
