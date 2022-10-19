@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void extend_main();
+extern void know_rtti_main();
 
 int main() {
-	extend_main();
+	know_rtti_main();
 }

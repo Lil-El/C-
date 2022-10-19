@@ -61,12 +61,15 @@ protected:
 	using Shape_9_1::height;
 };
 
+#define Q_PROPERTY(arg) static_assert(static_cast<bool>("Q_PROPERTY"), #arg);
+
 void extend_main() {
 	Rectangle_9_1 rect;
 	// 静态断言 -> Shape_9_1是否是另一个的基类
 	cout << is_base_of<Shape_9_1, Rectangle_9_1>::value << endl;
 	assert(sizeof(1) == sizeof(int));
 	static_assert(is_base_of<Shape_9_1, Rectangle_9_1>::value, "template params MUST be Point!");
+	Q_PROPERTY(1);
 	cout << "判断一个实例是否继承自某个类：" << boolalpha << (typeid(s1) == typeid(Shape_9_1)) << endl;
 	rect.setWidth(10);
 	rect.setHeigth(10);

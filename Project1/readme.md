@@ -119,6 +119,7 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 
 - class和struct
 - is_base_of, typeid判断继承关系
+- typeid().name()可以获取指针的class对象
 
 ## IO
 
