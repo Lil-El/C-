@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void know_explicit_main();
+extern void learn_virtual_extend_main();
 
 int main() {
-	know_explicit_main();
+	learn_virtual_extend_main();
 }
