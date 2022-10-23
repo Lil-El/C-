@@ -1,0 +1,8 @@
+LIBRARY "MinoDLL"
+
+;def×¢ÊÍÐ´·¨
+
+EXPORTS
+
+calcPlus @1 
+calcDiv  @2

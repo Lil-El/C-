@@ -141,6 +141,9 @@
     <ClCompile Include="10.overwrite.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
@@ -150,6 +153,9 @@
   <ItemGroup>
     <None Include="readme.md">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="module.def">
+      <Filter>源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
