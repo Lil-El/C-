@@ -1,3 +1,19 @@
 ﻿#pragma once
 
-#define WIN32_LEAN_AND_MEAN             // 从 Windows 头文件中排除极少使用的内容
+#ifndef STATIC_LIB
+#define STATIC_LIB
+
+#include <iostream>
+using namespace std;
+
+void fnStaticLib1();
+
+class StaticOne {
+	int age;
+public:
+	StaticOne() {};
+	StaticOne(int a);
+	void sayHello();
+};
+
+#endif // !STATIC_LIB

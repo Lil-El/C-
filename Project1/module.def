@@ -1,8 +1,8 @@
-LIBRARY "MinoDLL"
+;LIBRARY "MinoDLL"
 
 ;def×¢ÊÍÐ´·¨
 
-EXPORTS
+;EXPORTS
 
-calcPlus @1 
-calcDiv  @2
+;calcPlus @1 
+;calcDiv  @2

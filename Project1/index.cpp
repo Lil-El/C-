@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void learn_over_main();
+extern void useStatic_main();
 
 int main() {
-	learn_over_main();
+	useStatic_main();
 }
