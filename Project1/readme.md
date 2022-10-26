@@ -164,3 +164,31 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
 - <class... x>
 - dllimport dllexport
+
+#### 引用lib文件
+
+A
+1. static lib项目创建，选择无预编译头文件；打包
+2. main exe项目创建，在属性设置中
+	1. C/C++ - 附件包含目录：设置为.h文件的目录
+	2. 链接器 - 附加库目录：设置.lib文件的目录
+	3. 链接器 - 附加依赖项：填写lib文件名称
+3. 在main项目中引入.h文件，即可使用lib中的文件了
+
+B
+1. 将.lib和.h文件拷贝到main目录中
+
+C
+1. 将lib、h文件保存到一个任意目录中
+2. 在链接器 - 附加库目录：设置lib文件目录
+3. 在代码文件中，引入h文件
+4. 在代码文件中，pragma comment定义依赖项lib名称（等同于A-2-3）
+
+D
+同C，2改为VC++目录 - 库目录为lib文件目录
+
+E
+同D，3改为VC++目录 - 包含目录为h文件目录
+
+F
+库目录、包含目录、附加依赖项
