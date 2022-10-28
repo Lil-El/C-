@@ -147,6 +147,9 @@
     <ClCompile Include="10.useStatic.cpp">
       <Filter>源文件\high-grade</Filter>
     </ClCompile>
+    <ClCompile Include="11.useDll.cpp">
+      <Filter>源文件\high-grade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

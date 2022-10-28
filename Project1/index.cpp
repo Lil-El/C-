@@ -3,8 +3,8 @@
 //#include "util.h"
 using namespace std;
 
-extern void useStatic_main();
+extern void useDll_main();
 
 int main() {
-	useStatic_main();
+	useDll_main();
 }

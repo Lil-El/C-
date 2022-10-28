@@ -167,6 +167,26 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 #### 引用lib文件
 
+include：头文件，“xxx.h”没有则需要配置include path
+lib：通过pragma寻找，“xxx.lib”没有则需要配置lib path
+
+- 使用VS的“引用”功能
+	1. 设置包含include目录；
+	2. 在引用中引入lib目录
+
+- pragma
+	1. 设置include目录
+	2. pragma找到lib目录 ../lib/xxx.lib
+
+- 设置目录
+	1. 设置include目录
+	2. 设置（附加）库目录
+
+使用lib库，有三点：
+1. 确定、配置include path
+2. 配置lib path
+3. 手动或配置依赖项
+
 A
 1. static lib项目创建，选择无预编译头文件；打包
 2. main exe项目创建，在属性设置中
