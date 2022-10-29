@@ -33,7 +33,7 @@ __declspec   (dllexport)输出函数的时候，用loadlibrary又有何不可？
 建议用模块定义文件 .def文件来写DLL，这样能够保证导出函数的纯净
 */
 
-// 要导出的必须在h文件中写dll_export；zaih中对于extern需要给变量加上，函数可以不加。cpp中不写extern 和 dll_export也没事
+// 要导出的必须在h文件中写dll_export；在h中对于extern需要给变量加上，函数可以不加。cpp中不写extern 和 dll_export也没事
 // 静态调用时：但是在使用Dll加载时会报错。
 //extern DLL1_API int nDll1;
 //DLL1_API int fnDll1();
@@ -45,8 +45,8 @@ __declspec   (dllexport)输出函数的时候，用loadlibrary又有何不可？
 extern "C" {
 #endif // __cplusplus
 
-	extern DLL1_API int nDll1;
-	DLL1_API int fnDll1();
+	extern /*DLL1_API */int nDll1 = 25;
+	/*DLL1_API */ int fnDll1();
 
 #ifdef __cplusplus
 }

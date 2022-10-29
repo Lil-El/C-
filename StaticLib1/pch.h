@@ -6,9 +6,20 @@
 	应在此处包含任何稳定的标头文件，例如标准库标头（如 <vector>）
 */
 
-#ifndef PCH_H
-#define PCH_H
-// 添加要在此处预编译的标头
-#include "framework.h"
+#ifndef STATIC_LIB
+#define STATIC_LIB
 
-#endif
+#include <iostream>
+using namespace std;
+
+void fnStaticLib1();
+
+class StaticOne {
+	int age;
+public:
+	StaticOne() {};
+	StaticOne(int a);
+	void sayHello();
+};
+
+#endif // !STATIC_LIB

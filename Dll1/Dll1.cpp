@@ -7,10 +7,10 @@ using namespace std;
 
 // 这是导出变量的一个示例
 // cpp中extern和DLL_API不写也可以
-extern DLL1_API int nDll1 = 99;
+//int nDll1 = 99;
 
 // 这是导出函数的一个示例。
-extern DLL1_API int fnDll1()
+int fnDll1()
 {
 	cout << "fnDll1 run" << endl;
 	return 100;

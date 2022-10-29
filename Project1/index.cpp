@@ -3,8 +3,9 @@
 //#include "util.h"
 using namespace std;
 
-extern void useDll_main();
+// 先对函数进行声明，加不加extern都可以，默认就是有的
+extern void useStatic_main();
 
 int main() {
-	useDll_main();
+	useStatic_main();
 }

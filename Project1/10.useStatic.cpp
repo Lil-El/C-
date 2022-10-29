@@ -1,5 +1,4 @@
 #include "pch.h" // 引入pch.h或者framework.h都可以
-#pragma comment(lib, "StaticLib1.lib")
 
 /*
 	使用lib：只需要找到.h文件，.lib文件；
