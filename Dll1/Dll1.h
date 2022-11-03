@@ -10,11 +10,7 @@
 #define DLL1_API __declspec(dllimport)
 #endif
 
-class DLL1_API CDll1 {
-public:
-	CDll1();
-	void sayHello();
-};
+//
 
 /*
 extern   "C "只是表示这个能够被C语言调用，除了这个以外，没有什么更多含义。
@@ -31,6 +27,16 @@ __declspec   (dllexport)输出函数的时候，用loadlibrary又有何不可？
 名称。
 
 建议用模块定义文件 .def文件来写DLL，这样能够保证导出函数的纯净
+在  链接器-输入-模块定义文件中定义def文件的名称
+LIBRARY "Dll1"
+
+;这是一个注释
+
+EXPORTS
+nDll1      @1
+fnDll1     @2
+;VARDLL    =nDll1     @1
+;FNDLL     =fnDll1    @2
 */
 
 // 要导出的必须在h文件中写dll_export；在h中对于extern需要给变量加上，函数可以不加。cpp中不写extern 和 dll_export也没事
@@ -38,15 +44,22 @@ __declspec   (dllexport)输出函数的时候，用loadlibrary又有何不可？
 //extern DLL1_API int nDll1;
 //DLL1_API int fnDll1();
 
-
 // 使用LoadLibrary时，必须使用extern "C"，可以兼容静态、动态的调用。
 // extern “C” {...} 或者 extern "C" int a;
+
 #ifdef __cplusplus  // 如果是C++就渲染`extern "C"{`;
 extern "C" {
 #endif // __cplusplus
 
-	extern /*DLL1_API */int nDll1 = 25;
-	/*DLL1_API */ int fnDll1();
+	extern DLL1_API int nDll1;
+	DLL1_API int fnDll1();
+
+	// 编译器会忽略class前的extern "C"；extern C只对变量和函数起作用
+	class DLL1_API CDll1 {
+	public:
+		CDll1();
+		void sayHello();
+	};
 
 #ifdef __cplusplus
 }

@@ -8,32 +8,36 @@ using namespace std;
 	但是动态调用时，函数的名字都是以字符串的形式传在GetProcAddress中，所以这个名字和重命名之后的不一致，所以需要使用extrn "C"
 */
 
-//#pragma comment(lib, "Dll1.lib")
-//#include "Dll1.h"
+//#include "Dll1.h" 如下：
+extern "C" {
+	__declspec(dllimport) int nDll1;
+}
+#pragma comment(lib, "Dll1.lib")
 void staticCall() {
 	/*CDll1 cd;
-	cd.sayHello();
+	cd.sayHello();*/
 	cout << "nDll1: " << nDll1 << endl;
-	cout << "fnDll1(): " << fnDll1() << endl;*/
+	//cout << "fnDll1(): " << fnDll1() << endl;
 }
 
-//void dllCall() {
-//	typedef int(*FnPoint)();
-//
-//	HMODULE HD = LoadLibrary("Dll1.dll"); // 或者可以使用path：../../xxx.dll
-//	if (!HD) {
-//		cout << "HD is null" << endl;
-//		return;
-//	}
-//	FnPoint FD = (FnPoint)GetProcAddress(HD, "fnDll1");
-//	int* age = (int*)GetProcAddress(HD, "nDll1");
-//	if (!FD) {
-//		cout << "null: " << endl;
-//		return;
-//	}
-//	cout << "age: " << (*age) << endl;
-//	cout << "fnDll1(): " << FD() << endl;
-//}
+void dllCall() {
+	//typedef int(*FnPoint)();
+
+	//// L或者是修改属性-字符集为”多字节字符集“
+	//HMODULE HD = LoadLibrary(L"Dll1.dll"); // 或者可以使用path：../../xxx.dll
+	//if (!HD) {
+	//	cout << "HD is null." << endl;
+	//	return;
+	//}
+	//FnPoint FD = (FnPoint)GetProcAddress(HD, "fnDll1");
+	//int* age = (int*)GetProcAddress(HD, "nDll1");
+	//if (!FD) {
+	//	cout << "FD is null." << endl;
+	//	return;
+	//}
+	//cout << "age: " << (*age) << endl;
+	//cout << "fnDll1(): " << FD() << endl;
+}
 
 void useDll_main() {
 	staticCall();
