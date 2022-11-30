@@ -1,4 +1,4 @@
-#include "pch.h" // 引入pch.h或者framework.h都可以
+//#include "pch.h" // 引入pch.h或者framework.h都可以
 
 /*
 	使用lib：只需要找到.h文件，.lib文件；
@@ -18,8 +18,8 @@
 */
 
 void useStatic_main() {
-	StaticOne a(1);
+	/*StaticOne a(1);
 	a.sayHello();
 
-	fnStaticLib1();
+	fnStaticLib1();*/
 }

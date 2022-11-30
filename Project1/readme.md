@@ -166,13 +166,11 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 - 匿名函数
 - 移动构造函数
-- const指针相关
 - constexpr：https://blog.csdn.net/qq_37766667/article/details/123915233
 - union
-- 函数float fnName() const {}
+- 智能指针
 - decltype：自动类型推导  auto __cdecl
 - &&...：http://t.zoukankan.com/ishen-p-13771991.html
 - <class... x>
-- dllimport dllexport
 - stdcall cdecl
 - 可变参数
