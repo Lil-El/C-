@@ -18,7 +18,7 @@
 
 ## Visual Studio
 
-- “工具”->“选项”->“文本编辑器”->“C/C++”->“代码样式”->“格式设置”->“间距”->“指针/引用对齐方式”->“右对齐”
+- “工具”->“选项”->“文本编辑器”->“C/C++”->“代码样式”->“格式设置”->“间距”->“指针/引用对齐方式”->“左对齐”
 
 ## 创建项
 
@@ -59,6 +59,7 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 
 - function
 	1. 两个cpp文件，定义一个全局函数，在另个文件中可以通过extern去使用
+		- 如：在a.cpp中定义function a(){}，在b.cpp中使用（extern默认就有）function a();
 	2. 定义一个头文件，在cpp文件中include头文件
 
 - class
@@ -66,8 +67,17 @@ https://blog.csdn.net/Poo_Chai/article/details/89350054
 	2. 注意：Class无法使用extern，建议定义在h头文件中。因为class的内存大小无法确定
 
 - basic
-	1. 基础数据变量，在其他文件中定义的，可以通过extern去引入使用
-	2. 也可以在头文件中定义，最好添加static，否则会提示重复定义错误
+	1. 基础数据变量，在其他cpp文件中定义的，可以通过extern去引入使用（定义和引入都要添加extern关键字）
+		- 如：在a.cpp定义extern int a = 1; 在b.cpp使用extern int a; cout << a;
+	2. 也可以在头文件中定义，添加const或者static，否则会提示重复定义错误
+		- 在头文件中只声明，不要定义，否则多次include头文件，会提示重复定义。需要使用ifndef进行头文件保护。
+			把a.cpp和b.cpp单独链接成a.o和b.o之后不会报错，到最后编译链接成项目名.exe就会出现全局变量重定义
+		- 头文件保护：
+			每个头文件加上这个是个好习惯，但是不会对头文件中的定义生效，如int a = 1; void fn() {};
+			如果不加可能会出现以下场景:
+				有A.h，里面定义了一些方法。
+				有B.h，里面#include了A.h，也定义了一些方法。
+				现在main.cpp同时#include了A.h和B.h，就要报错了，字符串替换后包含了两次A.h，如果加了上头文件保护符，再导入A.h会不用执行，就避免了这种情况。
 	3. Tips:
 		1. cpp中定义的static的变量，无法在其他文件中extern并使用的；
 		2. h中定义的static变量，不会产生重复定义问题
@@ -165,3 +175,4 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - <class... x>
 - dllimport dllexport
 - stdcall cdecl
+- 可变参数

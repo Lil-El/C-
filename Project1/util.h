@@ -1,8 +1,10 @@
 #pragma once
 
-#ifndef  A
-#define  A
+#ifndef  My_Util
+#define  My_Util
 
+#include <iostream>
+using namespace std;
 // class通常定义在h文件中；因为编译器无法知道需要为class分配多少内存
 
 class Shape {
@@ -21,7 +23,19 @@ public:
 	int getArea(); 
 };
 
+extern int age0; // 定义一个全局变量
+
+// 其他文件定义此age0，logAge可以输入正确的age0
+//void logAge() {
+//	cout << age0 << endl;
+//};
 void logN(int num);
+
+//int agex = 1; // 如果只有一个cpp文件包含了此头文件，则不报错，否则重定义
+
+// cosnt、static修饰的不影响
+static int age; 
+const int age2 = 100;
 const static char global_str[20] = "Hello World";
 
-#endif
+#endif // !My_Util
