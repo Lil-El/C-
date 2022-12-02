@@ -150,8 +150,14 @@
     <ClCompile Include="11.useDll.cpp">
       <Filter>源文件\high-grade</Filter>
     </ClCompile>
-    <ClCompile Include="12.const.cpp">
+    <ClCompile Include="8.1.thread.cpp">
       <Filter>源文件\high-grade</Filter>
+    </ClCompile>
+    <ClCompile Include="12.const.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
+    <ClCompile Include="3.utility.cpp">
+      <Filter>源文件\STL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

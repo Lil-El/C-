@@ -23,12 +23,13 @@ void know_marco_main() {
 	#if __has_include(<iostream>)
 	#include <iostream>
 		using namespace std;
+		#define _MINO_STD ::std::
 	#else
 		cout << "error" << endl;
 	#endif
 
 	// defined()判断是否定义了宏
-	#if defined(Mino_Marco)
-		cout << "Mino" << endl;
+	#if defined(Mino_Marco) && ABC
+		cout << "Mino" << _MINO_STD endl;
 	#endif
 }

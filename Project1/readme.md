@@ -29,7 +29,7 @@
 
 ## using
 
-1. 类型定义，类似于typedef
+1. 类型定义，类似于typedef；using mInt = int;
 2. 命名空间，using namespace
 3. 父类成员变量修饰 `class: private parent { public: using parent::name};`
 4. 父类重载函数 `class : parent {using parent::getName()}`
@@ -158,6 +158,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - 性能：
 	static_assert: 所包含的代码不会生成目标代码，不会影响程序性能；
 	assert: 会影响程序性能，常用于调试阶段，正式释放软件时通常关闭assert功能
+- = default: 自动生成函数体；例如在class A中定义默认构造函数，A() = default;
 
 ## [STL](https://blog.csdn.net/weixin_53332395/article/details/123948946) 
 

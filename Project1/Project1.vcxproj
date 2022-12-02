@@ -168,6 +168,7 @@
     <ClCompile Include="3.new.cpp" />
     <ClCompile Include="3.string.cpp" />
     <ClCompile Include="3.typeTransform.cpp" />
+    <ClCompile Include="3.utility.cpp" />
     <ClCompile Include="4.array.cpp" />
     <ClCompile Include="4.marco.cpp" />
     <ClCompile Include="4.namespace.cpp" />
@@ -180,6 +181,7 @@
     <ClCompile Include="7.exception.cpp" />
     <ClCompile Include="7.io.cpp" />
     <ClCompile Include="7.signal.cpp" />
+    <ClCompile Include="8.1.thread.cpp" />
     <ClCompile Include="8.thread.cpp" />
     <ClCompile Include="8.vaparameter.cpp" />
     <ClCompile Include="9.1.classExtends.cpp" />
