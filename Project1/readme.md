@@ -9,12 +9,15 @@
 	- [C语言中文网](http://c.biancheng.net/view/7165.html)
 	- [Microsoft](https://docs.microsoft.com/zh-cn/cpp/cpp/char-wchar-t-char16-t-char32-t?view=msvc-170)
 
-## GNU C, ANSI C
+## 编译器
 
 - GNU C, ANSI C是两个标准，分别通过gcc和vs实现
 - GNU C通过gcc（linux）编译
 - ANSI C通过vs（windows）编译。
 - GNU C从语言层面相对于ANSI C做了一些扩展，所在一段跨平台的程序可以通过gcc编译，也不一定能用vs编译。
+- MSVC：微软的VC编译器
+- gcc、g++：C语言编译器和C++编译器
+- MinGW：Gnu和Windows包的集合，可以在linux、windows中运行而不需要引入其他C库
 
 ## Visual Studio
 
@@ -37,7 +40,13 @@
 - #program push/pop
 - #define: 定义宏
 - #undef: 取消宏定义
+- #if defined(char8_t) && _HAS_CXX20
 https://blog.csdn.net/Poo_Chai/article/details/89350054
+
+## 数据类型
+
+- _t: 表示使用typedef定义的类型
+- wchar_t: 表示 unsigned char 类型
 
 ## 字符串
 

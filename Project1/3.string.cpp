@@ -49,7 +49,7 @@ void strMain() {
 	 */
 	wcout.clear();
 	setlocale(LC_ALL, "chs");
-	cout << "cout:  " << wstr2 << endl;
+	// cout << "cout:  " << wstr2 << endl; C++20不能用cout输出wchar_t
 	wcout << "wcout:  " << wstr2 << endl;
 	wcout << "wcout:  " << wstr3 << endl;
 
@@ -81,14 +81,14 @@ void strMain() {
 	// wstring宽字符串
 	// string ASCII(也可以表示UTF-8);  wstring UTF-16
 	string str = "你好C";
-	string u8str = u8"你好C"; // UTF-8保存
+	//string u8str = u8"你C"; // UTF-8保存
 	//wstring wstr = "你好C";
 	cout << "str: " << str << endl;
-	cout << "u8str: " << u8str << endl;
+	//cout << "u8str: " << u8str << endl;
 
 	cout << "**************CString***************" << endl;
 	// CString是对string和wstring的封装，常用于MFC：微软基础类库
 	CString cstr("HEllo");
-	cout << "cstr: " << cstr << endl;
+	wcout << "cstr: " << cstr << endl;
 	
 }

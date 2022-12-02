@@ -27,10 +27,9 @@ void dataType_main() {
 	wchar_t wc = L'你'; // _T() 同等于 L (string.cpp)  单引号是字符
 	setlocale(LC_ALL, "chs");
 
-	// 常量 TODO const int const *
+	// 常量
 	const int age3 = 11;
 	#define MAX_AGE 12
-	// TODO: constexpr
 
 	// 枚举
 	enum OBJ {
@@ -68,6 +67,15 @@ void dataType_main() {
 	// 常量 static存储类
 	age = 22;
 	const static int myAge = 18; // static变量，多个函数直接共享一个值；用于class成员时，所以class对象都共享一个对象
+
+	/*
+	* 存储期：
+	* auto（11以前可用，11之后不可用），register（17废弃）
+	* static：静态或者 "线程存储期" 的内部链接
+	* extern：静态或者线程存储期的外部链接
+	* thread_local：线程存储期 - https://zhuanlan.zhihu.com/p/340201634
+	*				对象的存储在线程开始时分配，而在线程结束时解分配。每个线程拥有其自身的对象实例
+	*/
 
 	return ;
 }
