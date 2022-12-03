@@ -31,14 +31,16 @@ public:
 * 函数的返回类型及所有形参类型都是字面值类型
 * 函数体中只有一条return 语句
 */
-constexpr int getNum() {
-	int num = 100;
-	return num;
+constexpr int getNum(int n) {
+	return n + 1;
+}
+consteval int getNum2(int n) {
+	return n + 1;
 }
 
 /*
 * constexpr修饰函数仅表示支持在编译期求值（是否真的在编译期求值，不确定），但是在有些时候我们要求必须在编译期求值。
-* consteval修饰函数，要求函数必须在编译期求值。
+* consteval只能修饰函数，要求函数必须在编译期求值。
 */
 consteval int min(initializer_list<int> array)
 {
@@ -57,9 +59,7 @@ const char* GetStringDyn() {
 	return "dynamic init";
 }
 constexpr const char* GetString(bool constInit) {
-	return constInit ?
-		"constant init" :
-		GetStringDyn();
+	return constInit ? "constant init" : GetStringDyn();
 }
 
 void const_main() {
@@ -92,13 +92,20 @@ void const_main() {
 	constexpr int c = c1; // 如果c1不是const，会报错
 	constexpr int d = 2;
 	constexpr int e = d + c; 
-	constexpr int f = getNum(); // 函数必须是constexpr常量函数
+	constexpr int f = getNum(1); // 函数必须是constexpr常量函数
 
 	constexpr int* cp = nullptr; // 限定符constexpr仅对指针有效。指针不能改，值可以改
 	constexpr const int* dp = nullptr; // 指针和对象都不能改
 
 	// constinit修饰变量，保证变量在编译期初始化。只能使用constexpr或consteval函数初始化constinit变量
 	// thread_local: 对象的存储在线程开始时分配，而在线程结束时解分配。每个线程拥有其自身的对象实例
-	constinit thread_local int g = getNum(); // static 或 thread_local
-	//constinit const char* a = GetString(true);
+	constinit thread_local int g = getNum(1); // static 或 thread_local
+
+	cout << "********" << endl;
+
+	int nn = getNum(100);
+	cout << ++nn << endl;
+	//int nnn = getNum2(nn); 报错-nn不是常量
+	const int nn1 = getNum(100); // getNum是constexpr的，如果需要在编译求值，那么nn1也应该改为constexpr；否则就是运行执行了
+	int nn2 = getNum2(nn1);
 }

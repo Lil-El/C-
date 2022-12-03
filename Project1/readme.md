@@ -176,7 +176,6 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 - 匿名函数
 - 移动构造函数
-- constexpr：https://blog.csdn.net/qq_37766667/article/details/123915233
 - union
 - 智能指针
 - decltype：自动类型推导  auto __cdecl
@@ -184,3 +183,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - <class... x>
 - stdcall cdecl
 - 可变参数
+- declval
+- typename
+- 函数参数是Lambda表达式：void swap(_Ty (&)[_Size], _Ty (&)[_Size]);
+

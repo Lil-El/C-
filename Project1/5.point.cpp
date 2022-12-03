@@ -68,4 +68,5 @@ void point_main() {
 	int *pb1 = &b1;
 	int **p_pb1 = &pb1;
 
+	// &b1 µÈ¼ÛÓÚ addressof(b1)
 }
