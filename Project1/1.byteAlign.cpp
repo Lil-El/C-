@@ -1,6 +1,7 @@
 /*
 * struct、class字节对齐：
 * #program pack(1,2,4,8,16)等设置字节对齐
+*  _declspec(align(1,2,4,8,16))设置字节对齐
 */
 #include<iostream>
 #include<iomanip>

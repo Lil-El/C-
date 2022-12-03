@@ -38,6 +38,7 @@ using namespace std;
 	const：该属性只能用于带有数值类型参数的函数上。当重复调用带有数值参数的函数时，由于返回值是相同的，所以此时编译器可以进行优化处理，除第一次需要运算外，其它只需要返回第一次的结果就可以了，进而可以提高效率。该属性主要适用于没有静态状态(static state)和副作用的一些函数，并且返回值仅仅依赖输入的参数。
 	deprecated：告诉编译器已经过时
 */
+// attribute是GNU C的，在MSVC中是使用 _declspec(align())
 
 // 函数需要返回int值，如果中途退出会报错；所以为my_exit函数添加noreturn
 void know_attr_main() {

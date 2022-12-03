@@ -182,8 +182,8 @@
     <ClCompile Include="7.exception.cpp" />
     <ClCompile Include="7.io.cpp" />
     <ClCompile Include="7.signal.cpp" />
-    <ClCompile Include="8.1.thread.cpp" />
-    <ClCompile Include="8.thread.cpp" />
+    <ClCompile Include="1.thread.cpp" />
+    <ClCompile Include="2.thread.cpp" />
     <ClCompile Include="8.vaparameter.cpp" />
     <ClCompile Include="9.1.classExtends.cpp" />
     <ClCompile Include="9.2.rewrite.cpp" />
