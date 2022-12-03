@@ -16,7 +16,7 @@ using namespace std;
 
 	http://www.wjhsh.net/5iedu-p-11270922.html
 */
-int know_key_fn(bool flag) noexcept(false) {
+int know_key_fn(bool flag) noexcept(false) /* throw() */ {
 	if (flag) {
 		return 99;
 	}

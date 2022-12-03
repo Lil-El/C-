@@ -186,5 +186,3 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - declval
 - typename
 - 函数参数是Lambda表达式：void swap(_Ty (&)[_Size], _Ty (&)[_Size]);
-
-noexcept
