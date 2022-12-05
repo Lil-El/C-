@@ -174,7 +174,6 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 ## TODO:
 
-- 匿名函数
 - 移动构造函数
 - union
 - 智能指针

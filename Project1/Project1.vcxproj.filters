@@ -168,6 +168,9 @@
     <ClCompile Include="9.4.classFinal.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="11.lambda.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

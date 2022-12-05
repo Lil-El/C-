@@ -159,6 +159,7 @@
     <ClCompile Include="10.RTTI.cpp" />
     <ClCompile Include="10.useStatic.cpp" />
     <ClCompile Include="11.explicit.cpp" />
+    <ClCompile Include="11.lambda.cpp" />
     <ClCompile Include="11.useDll.cpp" />
     <ClCompile Include="12.const.cpp" />
     <ClCompile Include="13.using.cpp" />
