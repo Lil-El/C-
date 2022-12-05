@@ -189,6 +189,7 @@
     <ClCompile Include="9.2.rewrite.cpp" />
     <ClCompile Include="9.3.classVirtual.cpp" />
     <ClCompile Include="9.3.classVirtualExtend.cpp" />
+    <ClCompile Include="9.4.classFinal.cpp" />
     <ClCompile Include="9.classObj.cpp" />
     <ClCompile Include="9.attribute.cpp" />
     <ClCompile Include="9.sleep.cpp" />

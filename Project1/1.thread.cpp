@@ -15,7 +15,7 @@ thread_local int g = 100;
 void f1(int n)
 {
     for (int i = 0; i < 5; ++i) {
-        std::cout << "Thread " << n << " executing." << std::endl;
+        std::cout << "Thread " << n << " executing." << g << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 }

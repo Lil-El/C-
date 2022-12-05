@@ -185,7 +185,8 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - 可变参数
 - declval
 - typename
-- thread、thread_local 
+- mutex
+- thread
 	https://blog.csdn.net/zzhongcy/article/details/91372329
 	https://zhuanlan.zhihu.com/p/340201634 
 	https://www.runoob.com/w3cnote/cpp-std-thread.html 
@@ -193,6 +194,5 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 	https://blog.csdn.net/qq_20853741/article/details/114093265
 - 函数参数是Lambda表达式：void swap(_Ty (&)[_Size], _Ty (&)[_Size]);
 - C++11标准库 chrono functional atomic
-- final
 - functional: ref()
 - utility: move()

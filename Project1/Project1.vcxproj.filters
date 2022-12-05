@@ -165,6 +165,9 @@
     <ClCompile Include="2.thread.cpp">
       <Filter>源文件\thread</Filter>
     </ClCompile>
+    <ClCompile Include="9.4.classFinal.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
