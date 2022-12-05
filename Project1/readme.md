@@ -34,6 +34,10 @@
 3. 父类成员变量修饰 `class: private parent { public: using parent::name};`
 4. 父类重载函数 `class : parent {using parent::getName()}`
 
+## typename
+
+- 用于标识是一个类型名称；using myInt = typename struct1::type;
+
 ## 预编译
 
 - #program warning
@@ -183,7 +187,7 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - stdcall cdecl
 - 可变参数
 - declval
-- typename
+- 
 - mutex
 - thread
 	https://blog.csdn.net/zzhongcy/article/details/91372329

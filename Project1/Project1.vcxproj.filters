@@ -171,6 +171,9 @@
     <ClCompile Include="11.lambda.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="14.rightReference.cpp">
+      <Filter>源文件\knowledge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
