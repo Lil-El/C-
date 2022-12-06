@@ -4,8 +4,8 @@
 using namespace std;
 
 // 先对函数进行声明，加不加extern都可以，默认就是有的
-void union_main();
+void know_vapara_main();
 
 int main() {
-	union_main();
+	know_vapara_main();
 }
