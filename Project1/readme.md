@@ -176,18 +176,21 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 - [new、delete实现原理](https://www.php.cn/blog/detail/31237.html)
 
+## Blog:
+
+- 通用引用、右值引用：https://www.cnblogs.com/ht1947/p/10617821.html http://t.zoukankan.com/ishen-p-13771991.html
+
 ## TODO:
 
 - 移动构造函数
 - union
 - 智能指针
 - decltype：自动类型推导  auto __cdecl
-- &&...：右值引用  http://t.zoukankan.com/ishen-p-13771991.html
+- &&...
 - <class... x>
 - stdcall cdecl
 - 可变参数
 - declval
-- 
 - mutex
 - thread
 	https://blog.csdn.net/zzhongcy/article/details/91372329
