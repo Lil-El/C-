@@ -178,12 +178,11 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 ## Blog:
 
-- 通用引用、右值引用：https://www.cnblogs.com/ht1947/p/10617821.html http://t.zoukankan.com/ishen-p-13771991.html
+- 万能引用、右值引用：https://www.cnblogs.com/ht1947/p/10617821.html http://t.zoukankan.com/ishen-p-13771991.html
 
 ## TODO:
 
 - 移动构造函数
-- union
 - 智能指针
 - decltype：自动类型推导  auto __cdecl
 - &&...
