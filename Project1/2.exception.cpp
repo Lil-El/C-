@@ -54,9 +54,15 @@ struct MyException : public exception {
 		bad_alloc：该异常通过new抛出
 		等
 */
+#ifdef _HAS_CXX17
+void oneExcepFn() noexcept(false) {
+	throw 1;
+}
+#else
 void oneExcepFn() throw() {
 	throw 1;
 }
+#endif
 
 void excp_main() {
 	try {

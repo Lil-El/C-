@@ -21,6 +21,18 @@ using namespace std;
 * [x]: 获取x的拷贝
 * [this]: 获取class中的this指针
 */
+
+// 函数作为参数：1. 使用函数指针 2. typename Lambda 3. function
+template<typename T>
+void lambda_fn1(const T& fn) {
+	fn();
+}
+
+// function<int(void)> 表示函数返回值int，参数是void
+void lambda_fn2(const function<void()> &fn) {
+	fn();
+}
+
 void lambda_main() {
 	auto func = []() -> void {
 		cout << "lambda." << endl;
@@ -45,4 +57,10 @@ void lambda_main() {
 	[]() noexcept {
 		throw 1;
 	};
+
+	auto fn = []() -> void {
+		cout << "lambda_fn1" << endl;
+	};
+	lambda_fn1(fn);
+	lambda_fn2(fn);
 }
