@@ -185,14 +185,13 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - 移动构造函数
 - 智能指针
 - decltype：自动类型推导  auto __cdecl
-- stdcall cdecl
-- declval
-- mutex
+- stdcall cdecl fastcall 函数调用
+- declval https://blog.csdn.net/baidu_41388533/article/details/109692968
+- mutex 锁
 - thread
 	https://blog.csdn.net/zzhongcy/article/details/91372329
 	https://zhuanlan.zhihu.com/p/340201634 
 	https://www.runoob.com/w3cnote/cpp-std-thread.html 
 	https://zhuanlan.zhihu.com/p/450087085
 	https://blog.csdn.net/qq_20853741/article/details/114093265
-- 函数参数是Lambda表达式：void swap(_Ty (&)[_Size], _Ty (&)[_Size]);
 - C++11标准库 chrono functional atomic
