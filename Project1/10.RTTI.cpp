@@ -47,6 +47,7 @@ void know_rtti_main() {
 	// RTTI: 类型识别
 	cout << typeid(*human).name() << endl;
 	cout << boolalpha << (typeid(*human) == typeid(Man)) << endl;
+	//cout << is_base_of<Shape_9_1, Rectangle_9_1>::value << endl;
 	// RTTI: 类型转换；
 	/*
 	* 子类包含了父类的所有的对象，所以使用父类指针操作子类对象是合法的。
