@@ -53,12 +53,20 @@ struct hasTypeMem<T, std::void_t<typename T::intType> > : std::true_type {};
 
 //////////////////////////////////////////////////////////////////
 
-template<>
+template<typename T, typename U = void_t<> >
+struct is_bool : false_type {};
+
+template<typename T>
+struct is_bool<T, void_t<typename T::hello> > : true_type {
+	const static bool value = true;
+};
+
+template<typename T>
 void sfinae_str () {
-	if constexpr (true) {
-		cout << "sfinae_str 1" << endl;
+	if constexpr (is_bool<T>::value) {
+		cout << "sfinae_str true" << endl;
 	} else {
-		cout << "sfinae_str 0" << endl;
+		cout << "sfinae_str false" << endl;
 	}
 };
 
@@ -77,5 +85,8 @@ void sfinae_main() {
 	cout << hasTypeMem<hasType>::value << endl;
 	cout << hasTypeMem<noType>::value << endl;
 
-	sfinae_str();
+	struct M {
+		using hello = bool;
+	};
+	sfinae_str<M>();
 }
