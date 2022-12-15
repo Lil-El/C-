@@ -189,6 +189,9 @@
     <ClCompile Include="18.SFINAE.cpp">
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
+    <ClCompile Include="13.auto.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
