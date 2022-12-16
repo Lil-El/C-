@@ -165,6 +165,7 @@
     <ClCompile Include="12.union.cpp" />
     <ClCompile Include="13.auto.cpp" />
     <ClCompile Include="13.using.cpp" />
+    <ClCompile Include="14.moveConstructor.cpp" />
     <ClCompile Include="14.rightReference.cpp" />
     <ClCompile Include="16.call.cpp" />
     <ClCompile Include="17.declval.cpp" />

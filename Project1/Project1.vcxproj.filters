@@ -192,6 +192,9 @@
     <ClCompile Include="13.auto.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="14.moveConstructor.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

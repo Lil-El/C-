@@ -4,8 +4,8 @@
 using namespace std;
 
 // 先对函数进行声明，加不加extern都可以，默认就是有的
-void auto_main();
+void move_main();
 
 int main() {
-	auto_main();
+	move_main();
 }
