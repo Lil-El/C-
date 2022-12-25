@@ -4,8 +4,8 @@
 using namespace std;
 
 // 先对函数进行声明，加不加extern都可以，默认就是有的
-void move_main();
+void smart_point_main();
 
 int main() {
-	move_main();
+	smart_point_main();
 }

@@ -195,6 +195,12 @@
     <ClCompile Include="14.moveConstructor.cpp">
       <Filter>源文件\learning</Filter>
     </ClCompile>
+    <ClCompile Include="4.pointHug.cpp">
+      <Filter>源文件\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="5.smartPoint.cpp">
+      <Filter>源文件\STL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">
