@@ -162,7 +162,7 @@
     <ClCompile Include="1.thread.cpp">
       <Filter>源文件\thread</Filter>
     </ClCompile>
-    <ClCompile Include="2.thread.cpp">
+    <ClCompile Include="2.winThread.cpp">
       <Filter>源文件\thread</Filter>
     </ClCompile>
     <ClCompile Include="9.4.classFinal.cpp">
@@ -200,6 +200,12 @@
     </ClCompile>
     <ClCompile Include="5.smartPoint.cpp">
       <Filter>源文件\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="3.winThread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="4.winThreadMutex.cpp">
+      <Filter>源文件\thread</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

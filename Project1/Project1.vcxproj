@@ -176,12 +176,14 @@
     <ClCompile Include="2.map.cpp" />
     <ClCompile Include="3.new.cpp" />
     <ClCompile Include="3.string.cpp" />
+    <ClCompile Include="3.winThread.cpp" />
     <ClCompile Include="3.typeTransform.cpp" />
     <ClCompile Include="3.utility.cpp" />
     <ClCompile Include="4.array.cpp" />
     <ClCompile Include="4.marco.cpp" />
     <ClCompile Include="4.namespace.cpp" />
     <ClCompile Include="4.pointHug.cpp" />
+    <ClCompile Include="4.winThreadMutex.cpp" />
     <ClCompile Include="5.attribute.cpp" />
     <ClCompile Include="5.point.cpp" />
     <ClCompile Include="5.smartPoint.cpp" />
@@ -193,7 +195,7 @@
     <ClCompile Include="7.io.cpp" />
     <ClCompile Include="7.signal.cpp" />
     <ClCompile Include="1.thread.cpp" />
-    <ClCompile Include="2.thread.cpp" />
+    <ClCompile Include="2.winThread.cpp" />
     <ClCompile Include="8.vaparameter.cpp" />
     <ClCompile Include="9.1.classExtends.cpp" />
     <ClCompile Include="9.2.rewrite.cpp" />
