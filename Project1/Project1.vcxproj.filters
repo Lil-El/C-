@@ -207,6 +207,12 @@
     <ClCompile Include="4.winThreadMutex.cpp">
       <Filter>源文件\thread</Filter>
     </ClCompile>
+    <ClCompile Include="5.thread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="6.chrnon.cpp">
+      <Filter>源文件\STL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

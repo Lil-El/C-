@@ -188,6 +188,8 @@
     <ClCompile Include="5.point.cpp" />
     <ClCompile Include="5.smartPoint.cpp" />
     <ClCompile Include="5.template.cpp" />
+    <ClCompile Include="5.thread.cpp" />
+    <ClCompile Include="6.chrnon.cpp" />
     <ClCompile Include="6.declspec.cpp" />
     <ClCompile Include="6.preprocess.cpp" />
     <ClCompile Include="6.quote.cpp" />

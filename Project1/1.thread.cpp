@@ -4,7 +4,10 @@
 #include <chrono>
 #include <functional>
 #include <atomic>*/
-
+/*
+	https://zhuanlan.zhihu.com/p/340201634 
+	https://www.runoob.com/w3cnote/cpp-std-thread.html 
+*/
 /*
 * 存储类型thread_local：具有线程周期，可以和static、extern配合使用
 * 如果不加thread_local，那么g被所有线程共享

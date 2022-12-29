@@ -184,10 +184,4 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 - 智能指针
 - mutex 锁
-- thread
-	https://blog.csdn.net/zzhongcy/article/details/91372329
-	https://zhuanlan.zhihu.com/p/340201634 
-	https://www.runoob.com/w3cnote/cpp-std-thread.html 
-	https://zhuanlan.zhihu.com/p/450087085
-	https://blog.csdn.net/qq_20853741/article/details/114093265
-- C++11标准库 chrono functional atomic
+- C++11标准库 functional atomic
