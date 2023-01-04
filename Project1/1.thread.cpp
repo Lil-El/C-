@@ -43,6 +43,9 @@ void thread_main_81()
     std::thread t2(f1, n + 1); // 值
     std::thread t3(f2, std::ref(n)); // 引用
     std::thread t4(std::move(t3)); // t4运行f2(),t3不再是一个thread
+    // join():主线程会阻塞，当子线程执行结束后，主线程才会继续执行
+    // detach():将主线程和子线程分离，分离后，主线程无法控制子线程，子线程转为后台线程，子线程将由系统(运行时库)托管。
+    // 其后，子线程的“死活”就和主线程无关。子线程结束后，由系统自动释放其资源。即守护线程。
     t2.join();
     t4.join();
     std::cout << "Final value of n is " << n << '\n';

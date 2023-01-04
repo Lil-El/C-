@@ -4,8 +4,8 @@
 using namespace std;
 
 // 先对函数进行声明，加不加extern都可以，默认就是有的
-void thread5_main();
+void mutex_main();
 
 int main() {
-	thread5_main();
+	mutex_main();
 }

@@ -195,6 +195,7 @@
     <ClCompile Include="6.quote.cpp" />
     <ClCompile Include="7.exception.cpp" />
     <ClCompile Include="7.io.cpp" />
+    <ClCompile Include="7.mutex.cpp" />
     <ClCompile Include="7.signal.cpp" />
     <ClCompile Include="1.thread.cpp" />
     <ClCompile Include="2.winThread.cpp" />

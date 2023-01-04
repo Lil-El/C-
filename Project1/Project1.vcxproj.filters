@@ -22,11 +22,11 @@
     <Filter Include="源文件\knowledge">
       <UniqueIdentifier>{902b0e82-b34a-4e3f-9573-0b33381236dc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\STL">
-      <UniqueIdentifier>{2120dec6-cdcd-4ee0-8ae9-c2638502f47a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\thread">
       <UniqueIdentifier>{2bc771bd-0c55-4bc1-a10a-8d39f2e9b5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Cpp11">
+      <UniqueIdentifier>{2120dec6-cdcd-4ee0-8ae9-c2638502f47a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -100,10 +100,10 @@
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
     <ClCompile Include="1.vector.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
     <ClCompile Include="2.map.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
     <ClCompile Include="3.typeTransform.cpp">
       <Filter>源文件\knowledge</Filter>
@@ -154,7 +154,7 @@
       <Filter>源文件\knowledge</Filter>
     </ClCompile>
     <ClCompile Include="3.utility.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
     <ClCompile Include="13.using.cpp">
       <Filter>源文件\knowledge</Filter>
@@ -196,10 +196,10 @@
       <Filter>源文件\learning</Filter>
     </ClCompile>
     <ClCompile Include="4.pointHug.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
     <ClCompile Include="5.smartPoint.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
     <ClCompile Include="3.winThread.cpp">
       <Filter>源文件\thread</Filter>
@@ -211,7 +211,10 @@
       <Filter>源文件\thread</Filter>
     </ClCompile>
     <ClCompile Include="6.chrnon.cpp">
-      <Filter>源文件\STL</Filter>
+      <Filter>源文件\Cpp11</Filter>
+    </ClCompile>
+    <ClCompile Include="7.mutex.cpp">
+      <Filter>源文件\Cpp11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
