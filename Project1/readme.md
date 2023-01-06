@@ -182,10 +182,4 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 
 ## TODO:
 
-- 智能指针
-- mutex 锁
-	https://blog.csdn.net/aixintianshideshouhu/article/details/94599830
-	https://blog.csdn.net/weixin_42127358/article/details/123507748
-	https://blog.csdn.net/sinat_31608641/article/details/107733436
-	https://blog.csdn.net/fuhanghang/article/details/114076161
 - C++11标准库 functional atomic

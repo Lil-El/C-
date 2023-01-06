@@ -108,6 +108,4 @@ void mutex_main() {
 	//t2.join();
 	//t3.join();
 	t4.join();
-
-	// TODO: cloud.tencent.com/developer/article/1583807
 }
