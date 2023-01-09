@@ -155,6 +155,7 @@
     </ClCompile>
     <ClCompile Include="1.io.cpp" />
     <ClCompile Include="1.vector.cpp" />
+    <ClCompile Include="10.atomic.cpp" />
     <ClCompile Include="10.overwrite.cpp" />
     <ClCompile Include="10.RTTI.cpp" />
     <ClCompile Include="10.useStatic.cpp" />

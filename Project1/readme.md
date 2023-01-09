@@ -181,5 +181,3 @@ https://blog.csdn.net/qq_45801299/article/details/112298619
 - 万能引用、右值引用：https://www.cnblogs.com/ht1947/p/10617821.html http://t.zoukankan.com/ishen-p-13771991.html
 
 ## TODO:
-
-- C++11标准库 functional atomic
