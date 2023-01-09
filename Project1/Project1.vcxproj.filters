@@ -219,6 +219,9 @@
     <ClCompile Include="8.unique_lock.cpp">
       <Filter>源文件\Cpp11</Filter>
     </ClCompile>
+    <ClCompile Include="9.functional.cpp">
+      <Filter>源文件\Cpp11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

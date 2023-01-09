@@ -208,6 +208,7 @@
     <ClCompile Include="9.4.classFinal.cpp" />
     <ClCompile Include="9.classObj.cpp" />
     <ClCompile Include="9.attribute.cpp" />
+    <ClCompile Include="9.functional.cpp" />
     <ClCompile Include="9.sleep.cpp" />
     <ClCompile Include="index.cpp" />
     <ClCompile Include="8.struct.cpp" />
