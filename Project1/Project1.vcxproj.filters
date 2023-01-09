@@ -225,6 +225,9 @@
     <ClCompile Include="10.atomic.cpp">
       <Filter>源文件\Cpp11</Filter>
     </ClCompile>
+    <ClCompile Include="15.time.cpp">
+      <Filter>源文件\learning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h">

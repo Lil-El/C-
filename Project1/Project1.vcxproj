@@ -121,6 +121,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\Work\Visual Studio\C++\Basic\Dll1;D:\Work\Visual Studio\C++\Basic\StaticLib1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>Default</LanguageStandard_C>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -168,6 +169,7 @@
     <ClCompile Include="13.using.cpp" />
     <ClCompile Include="14.moveConstructor.cpp" />
     <ClCompile Include="14.rightReference.cpp" />
+    <ClCompile Include="15.time.cpp" />
     <ClCompile Include="16.call.cpp" />
     <ClCompile Include="17.declval.cpp" />
     <ClCompile Include="18.SFINAE.cpp" />
